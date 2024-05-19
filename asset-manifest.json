@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mempool_fee_notifier/static/css/main.e61beb95.css",
+    "main.js": "/mempool_fee_notifier/static/js/main.0aebbc64.js",
+    "index.html": "/mempool_fee_notifier/index.html",
+    "main.e61beb95.css.map": "/mempool_fee_notifier/static/css/main.e61beb95.css.map",
+    "main.0aebbc64.js.map": "/mempool_fee_notifier/static/js/main.0aebbc64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e61beb95.css",
+    "static/js/main.0aebbc64.js"
+  ]
+}
