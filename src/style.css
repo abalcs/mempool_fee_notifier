@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f0f0, #d9e1f2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container for the app content */
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Styling for the main title */
+h1 {
+  font-size: 2.5em;
+  color: #4a69bd;
+  margin-bottom: 20px;
+  animation: colorChange 4s infinite alternate;
+}
+
+/* Status display styling */
+.status {
+  font-size: 1.5em;
+  padding: 20px;
+  background-color: #e7e7ff;
+  border: 2px solid #d0d0ff;
+  border-radius: 12px;
+  margin-top: 20px;
+  color: #555;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Provide a slight transition for all interactive elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Adjust the status box colors dynamically */
+.status.alert {
+  background-color: #ffeded;
+  border-color: #ffcccc;
+  color: #cc0000;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Color change animation */
+@keyframes colorChange {
+  from {
+      color: #4a69bd;
+  }
+  to {
+      color: #6a89cc;
+  }
+}
+
+/* Button styles (if any buttons are added in the future) */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4a69bd;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #6a89cc;
+}
+
+button:active {
+  background: #3b5998;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
